@@ -19,3 +19,7 @@ const HOST = process.env.HOST;
 app.listen(PORT,HOST, () => {
   console.log(`Server is running on http://${HOST}:${PORT}`);
 });
+
+app.get("/", (req,res) => {
+  res.send("Welcome to Flow.Ai Personal Expense Tracker Backend !!!")
+})
